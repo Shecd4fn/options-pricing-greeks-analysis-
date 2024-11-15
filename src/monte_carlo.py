@@ -1,5 +1,22 @@
 import numpy as np
 def monte_carlo_asian(S, K, T, r, sigma, simulations=10000, option_type='call'):
+
+    """
+    Pricer for European options using Monte Carlo simulation.
+
+    Parameters:
+    S : float : Current price of the underlying asset.
+    K : float : Strike price of the option.
+    T : float : Time to maturity (in years).
+    r : float : Risk-free interest rate.
+    sigma : float : Volatility of the underlying asset.
+    simulations : int : Number of simulated paths.
+    option_type : str : 'call' or 'put'.
+
+    Returns:
+    float : The price of the option.
+    """
+    
     dt = T / 252  # Assume 252 trading days in a year
     payoff_sum = 0
 
