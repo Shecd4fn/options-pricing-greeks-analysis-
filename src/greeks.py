@@ -1,3 +1,6 @@
+import numpy as np
+from black_sholes import black_sholes
+
 def calculate_greeks(S, K, T, r, sigma, option_type='call'):
     delta_S = 1e-4 * S
     price_base = black_scholes(S, K, T, r, sigma, option_type)
