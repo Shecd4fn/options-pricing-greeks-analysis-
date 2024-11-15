@@ -2,6 +2,23 @@ import numpy as np
 from black_scholes import black_scholes
 
 def calculate_greeks(S, K, T, r, sigma, option_type='call'):
+    """
+    Calculates the Greeks for a given option using finite difference methods.
+
+    Parameters:
+    S : float : Current price of the underlying asset.
+    K : float : Strike price of the option.
+    T : float : Time to maturity (in years).
+    r : float : Risk-free interest rate.
+    sigma : float : Volatility of the underlying asset.
+    option_type : str : 'call' or 'put'.
+
+    Returns:
+    dict : A dictionary containing the calculated values for Delta, Gamma, Vega, Theta, and Rho.
+    """
+
+
+    
     delta_S = 1e-4 * S
     price_base = black_scholes(S, K, T, r, sigma, option_type)
     
