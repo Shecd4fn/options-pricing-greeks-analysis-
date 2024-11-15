@@ -17,6 +17,4 @@ This project provides Python implementations for pricing European, American, and
 
 ## Installation
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/options-pricing-greeks-analysis.git
-   cd options-pricing-greeks-analysis
+  
