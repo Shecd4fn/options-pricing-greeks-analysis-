@@ -1,5 +1,22 @@
 import numpy as np
 def binomial_tree(S, K, T, r, sigma, steps=100, option_type='call', american=False):
+    """
+    Pricer for European and American options using a binomial tree.
+
+    Parameters:
+    S : float : Current price of the underlying asset.
+    K : float : Strike price of the option.
+    T : float : Time to maturity (in years).
+    r : float : Risk-free interest rate.
+    sigma : float : Volatility of the underlying asset.
+    steps : int : Number of steps in the binomial tree.
+    option_type : str : 'call' or 'put'.
+    american : bool : True for American option, False for European option.
+
+    Returns:
+    float : The price of the option.
+    """
+    
     dt = T / steps
     u = np.exp(sigma * np.sqrt(dt))
     d = 1 / u
