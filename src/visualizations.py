@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+from numpy import np
 from greeks import calculate_greeks
 
 def plot_greeks(S, K, T, r, sigma, option_type='call'):
