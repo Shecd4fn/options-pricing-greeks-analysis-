@@ -1,3 +1,4 @@
+import numpy as np
 def monte_carlo_asian(S, K, T, r, sigma, simulations=10000, option_type='call'):
     dt = T / 252  # Assume 252 trading days in a year
     payoff_sum = 0
