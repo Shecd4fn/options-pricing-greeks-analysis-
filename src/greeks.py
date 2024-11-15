@@ -1,5 +1,5 @@
 import numpy as np
-from black_sholes import black_sholes
+from black_scholes import black_scholes
 
 def calculate_greeks(S, K, T, r, sigma, option_type='call'):
     delta_S = 1e-4 * S
