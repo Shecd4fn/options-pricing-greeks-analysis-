@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-from greeks import greeks
+from greeks import calculate_greeks
 
 def plot_greeks(S, K, T, r, sigma, option_type='call'):
     prices = np.linspace(S * 0.8, S * 1.2, 100)
