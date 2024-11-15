@@ -1,3 +1,4 @@
+import numpy as np
 def binomial_tree(S, K, T, r, sigma, steps=100, option_type='call', american=False):
     dt = T / steps
     u = np.exp(sigma * np.sqrt(dt))
