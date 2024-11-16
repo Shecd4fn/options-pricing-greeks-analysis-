@@ -17,9 +17,12 @@ def binomial_tree(S, K, T, r, sigma, steps=100, option_type='call', american=Fal
     float : The price of the option.
     """
     
+    # Calculate time increment for each step
     dt = T / steps
+    # Calculate up (u) and down (d) factors for price movement
     u = np.exp(sigma * np.sqrt(dt))
     d = 1 / u
+    # Calculate the risk-neutral probability
     p = (np.exp(r * dt) - d) / (u - d)
 
     # Initialize asset price tree
