@@ -36,8 +36,7 @@ These factors are defined as:
 Where:
 - \( \sigma \) is the volatility of the underlying asset.
 - \( \Delta t = T / N \) is the time increment per step, with \( T \) being the total time to maturity and \( N \) the number of steps.
-How to Embed Images of Equations
-Use a tool like La
+![Equation](.png)
 
 ### 3. Risk-Neutral Probability
 To ensure that the option is priced in a risk-neutral framework, the model uses the risk-neutral probability \( p \), defined as:
