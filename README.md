@@ -26,17 +26,18 @@ The binomial tree model is a numerical method used for pricing European and Amer
 
 ### 2. Asset Price Evolution
 The model assumes that, at each time step, the underlying asset price can move either **up** or **down** by specific factors:
-- **Up factor (\( u \))**: The factor by which the asset price increases at each step.
-- **Down factor (\( d \))**: The factor by which the asset price decreases, defined as \( d = \frac{1}{u} \).
+- **Up factor (u)**: The factor by which the asset price increases at each step.
+- **Down factor (d)**: The factor by which the asset price decreases, defined as \( d = 1 / u \).
 
 These factors are defined as:
-\[
-u = e^{\sigma \sqrt{\Delta t}}, \quad d = e^{-\sigma \sqrt{\Delta t}}
-\]
+- Up factor: \( u = exp(\sigma \times \sqrt{\Delta t}) \)
+- Down factor: \( d = exp(-\sigma \times \sqrt{\Delta t}) \)
 
 Where:
-- **\( \sigma \)**: Volatility of the underlying asset.
-- **\( \Delta t = \frac{T}{N} \)**: Time increment per step, with \( T \) being the total time to maturity and \( N \) the number of steps.
+- \( \sigma \) is the volatility of the underlying asset.
+- \( \Delta t = T / N \) is the time increment per step, with \( T \) being the total time to maturity and \( N \) the number of steps.
+How to Embed Images of Equations
+Use a tool like La
 
 ### 3. Risk-Neutral Probability
 To ensure that the option is priced in a risk-neutral framework, the model uses the risk-neutral probability \( p \), defined as:
